@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+
+	"name": "Quora Upvote Count Revealer",
+	"version": "0.1.0",
+	"description": "Displays upvote count for Quora answers.",
+
+	"content_scripts": [{
+		"js": ["scripts/content.js"],
+		"matches": ["https://www.quora.com/*"]
+	}],
+
+	"web_accessible_resources": ["scripts/upvote_revealer.js"]
+}
